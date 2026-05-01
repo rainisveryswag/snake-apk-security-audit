@@ -39,7 +39,7 @@ Static analysis of the Android application `snake.apk` (package: `com.pwnsec.sna
 ![MobSF Login](Capture d’écran 2026-05-01 à 13.10.48.png)
 
 ### Analysis Dashboard
-![Dashboard](screenshot_dashboard.png)
+![Dashboard](Capture d’écran 2026-05-01 à 13.16.45..png)
 
 ### Permissions
 ![Permissions](screenshot_permissions.png)
