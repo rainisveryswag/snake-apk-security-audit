@@ -45,7 +45,7 @@ Static analysis of the Android application `snake.apk` (package: `com.pwnsec.sna
 ![Permissions](Capture d’écran 2026-05-01 à 13.24.19..png)
 
 ### Manifest Analysis
-![Manifest](screenshot_manifest.png)
+![Manifest](Capture d’écran 2026-05-01 à 13.24.40.png)
 
 ### Components
 ![Components](screenshot_components.png)
