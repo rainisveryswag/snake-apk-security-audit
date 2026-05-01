@@ -1,0 +1,8 @@
+Date d'analyse : Fri May  1 12:43:34 PDT 2026
+Analyste : Yousra zarri
+APK analysé : snake.apk
+b586c548f94c4006f5112b4edcabf0efb28a9bec531c741d0ce786d5aa4985c7  snake.apk
+APK analysé : snake.apk
+Security Score : 67/100
+SHA256 : b586c548f94c4006f5112b4edcabf0efb28a9bec531c741d0ce786d5aa4985c7
+Fin d'analyse : Fri May  1 13:18:31 PDT 2026

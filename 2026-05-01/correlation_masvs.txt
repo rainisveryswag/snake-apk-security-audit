@@ -1,0 +1,34 @@
+Corrélation OWASP MASVS - snake.apk
+=====================================
+
+Vulnérabilité 1 : Journalisation de données sensibles
+------------------------------------------------------
+Référence MASVS : MSTG-STORAGE-3
+Description : L'application ne doit pas écrire de données sensibles dans les logs.
+Preuve : MobSF Code Analysis détecte l'utilisation de Log.d/Log.e dans MainActivity.java
+Impact : Un attaquant avec accès au device peut lire les logs via adb logcat et récupérer des données sensibles.
+Sévérité : Info
+
+Vulnérabilité 2 : Générateur de nombres aléatoires non sécurisé
+---------------------------------------------------------------
+Référence MASVS : MSTG-CRYPTO-6
+Description : L'application ne doit pas utiliser des primitives cryptographiques faibles.
+Preuve : MobSF détecte l'utilisation de java.util.Random au lieu de SecureRandom (CWE-330)
+Impact : Les valeurs générées sont prévisibles, compromettant toute fonction de sécurité basée sur l'aléatoire.
+Sévérité : Warning
+
+Vulnérabilité 3 : Sauvegarde des données autorisée
+--------------------------------------------------
+Référence MASVS : MSTG-STORAGE-8
+Description : Les sauvegardes Android ne doivent pas inclure de données sensibles.
+Preuve : android:allowBackup=true dans le manifeste
+Impact : Toute personne avec accès USB peut extraire les données de l'app via adb backup.
+Sévérité : Warning
+
+Tests MASTG complémentaires
+---------------------------
+Test 1 : MASTG-TEST-0011 - Testing Logs for Sensitive Data
+Objectif : Vérifier que les logs ne contiennent pas de données sensibles en exécutant l'app et analysant la sortie logcat.
+
+Test 2 : MASTG-TEST-0061 - Testing Random Number Generation
+Objectif : Vérifier que SecureRandom est utilisé partout où un aléatoire cryptographique est nécessaire.

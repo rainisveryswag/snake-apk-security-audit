@@ -1,0 +1,6 @@
+
+1. Sensitive data logging - MSTG-STORAGE-3 - INFO
+2. Insecure Random Number Generator - MSTG-CRYPTO-6 - WARNING
+3. Read/Write External Storage - CWE-276 - WARNING
+4. allowBackup=true - data extractable via ADB - WARNING
+5. FORTIFY disabled in libsnake.so - binary hardening missing - WARNING

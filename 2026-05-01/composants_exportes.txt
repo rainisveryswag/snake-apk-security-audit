@@ -1,0 +1,3 @@
+
+- androidx.profileinstaller.ProfileInstallReceiver (exported, weak permission)
+- androidx.startup.InitializationProvider
